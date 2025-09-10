@@ -1,0 +1,25 @@
+{
+  "name": "fil-live-desktop-app",
+  "version": "1.0.0",
+  "description": "FILECOIN (FIL/USD) live desktop tracker with on-chain qty, P&L, TP/SL alerts.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win --x64",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron": "^31.3.0",
+    "electron-builder": "^24.13.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mr-STIFFLER/fil-live-desktop-app.git"
+  },
+  "author": "Mr-STIFFLER",
+  "build": {
+    "appId": "com.yourdomain.fillivedesktop"
+  }
+}
