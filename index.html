@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>FILECOIN Live</title>
+  <!-- Content Security Policy restricting external sources for improved security -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src * blob: data:; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self';" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>FILECOIN (FIL/USD) — Live</h1>
+    <div id="updated">Connecting…</div>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <div class="label">Price</div>
+      <div id="price" class="value">—</div>
+    </div>
+
+    <div class="card">
+      <div class="label">Δ 1h / 24h</div>
+      <div id="delta" class="value">—</div>
+    </div>
+
+    <div class="card">
+      <div class="label">24h High / Low</div>
+      <div id="hl24" class="value">—</div>
+    </div>
+
+    <div class="card span2">
+      <div class="label">Your Position</div>
+      <div id="position" class="mono small">—</div>
+    </div>
+
+    <div class="card span2">
+      <div class="label">Targets</div>
+      <div id="targets" class="mono small">—</div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Data: Coinbase WS/Kraken/REST fallbacks • Times: local</span>
+  </footer>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
